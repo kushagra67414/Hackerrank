@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int s, t, a, b, n, m, location, apple=0, orange=0;
+    cin >> s >> t >> a >> b >> m >> n;
+
+    for(int i=0;i<m; i++) {
+        cin>>location;
+        location = a + location;
+        if(location>=s && location<=t)
+            apple++;
+    }
+    for(int i=0;i<n; i++) {
+        cin>>location;
+        location = b + location;
+        if(location>=s && location<=t)
+            orange++;
+    }
+    cout << apple << endl<< orange << endl; 
+    return 0;
+}
