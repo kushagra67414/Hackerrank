@@ -1,1 +1,6 @@
 lets begin with some crazy problems.
+
+
+Day 4:
+
+learn some new facts and whats the importance of System.exit(0).
